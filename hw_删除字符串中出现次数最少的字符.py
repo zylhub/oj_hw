@@ -18,4 +18,29 @@ while True:
     except:
         break
 
-# solution 2 
+# solution 2
+def solution(inp_str):
+    ch_set = set(inp_str)
+    min_count = 21
+    for ch in ch_set:
+        ch_count = inp_str.count(ch)
+        if ch_count < min_count:
+            min_count = ch_count
+    ret = ''
+    for e in inp_str:
+        if inp_str.count(e)==min_count:
+            continue
+        else:
+            ret += e
+    return ret
+
+while True:
+    try:
+        inp = raw_input()
+        if inp == '':
+            break
+        print solution(inp)
+    except:
+        exit(0)
+
+print solution('abcdd')
