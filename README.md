@@ -1,6 +1,9 @@
 ## life is short, use python
 
-> 华为oj的solution，当然是用的python（python2.7版本）
+> 主要是华为oj的solution，当然是用的python（python2.7版本）
+
+> 当然包含部分其他编程题
+
 
 ## 常用python字符串操作
 
